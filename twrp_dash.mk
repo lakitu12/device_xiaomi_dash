@@ -20,4 +20,7 @@ PRODUCT_MANUFACTURER := Xiaomi
 # It is a KATI_READONLY variable in Android 16 build system and cannot be
 # assigned from device makefiles.
 
+# Android 16 prebuilt SDK requires CrashRecovery declaration
+PRODUCT_APEX_SYSTEM_SERVER_JARS += service-crashrecovery
+
 PRODUCT_PROPERTY_OVERRIDES += ro.twrp.vendor_boot=true
