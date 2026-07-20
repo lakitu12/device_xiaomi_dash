@@ -3,6 +3,10 @@ DEVICE_PATH := device/xiaomi/dash
 # API
 PRODUCT_SHIPPING_API_LEVEL := 35 
 
+# Android 16 prebuilt SDK requires CrashRecovery APEX declaration
+# (format: <module>:<jar>, per nubia NX733J TWRP-16.0 reference)
+PRODUCT_APEX_SYSTEM_SERVER_JARS += com.android.crashrecovery:service-crashrecovery
+
 # VNDK
 PRODUCT_TARGET_VNDK_VERSION := 35
 
