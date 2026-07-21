@@ -124,6 +124,5 @@ BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 # Disable ABI checks for recovery build (PLATFORM_VERSION=99.87.36 mismatch)
 SKIP_ABI_CHECKS := true
 
-# Bootconfig (required for vendor_boot v4 on GKI)
-BOARD_BOOTCONFIG := \
-    androidboot.selinux=permissive
+# Bootconfig (vendor_boot v4 on GKI)
+BOARD_VENDOR_BOOTCONFIG := androidboot.selinux=permissive
